@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Timetable Generation Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automatic Timetable Generation Prototype</h1>
+        
+        <!-- Course selection section -->
+        <div class="course-selection">
+            <h2>Select Courses</h2>
+            <!-- Example course checkboxes -->
+            <label>
+                <input type="checkbox" id="courseA" data-course="Course A" data-days="Mon,Wed" data-time="10:00-11:30"> Course A (Mon, Wed, 10:00-11:30)
+            </label>
+            <label>
+                <input type="checkbox" id="courseB" data-course="Course B" data-days="Tue,Thu" data-time="11:00-12:30"> Course B (Tue, Thu, 11:00-12:30)
+            </label>
+            <label>
+                <input type="checkbox" id="courseC" data-course="Course C" data-days="Fri" data-time="12:00-13:30"> Course C (Fri, 12:00-13:30)
+            </label>
+        </div>
+
+        <!-- Timetable display section -->
+        <div class="timetable">
+            <h2>Timetable</h2>
+            <table id="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Timetable rows will be generated dynamically here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
