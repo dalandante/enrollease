@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Timetable Generation Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automatic Timetable Generation Prototype</h1>
+        
+        <!-- Course selection section -->
+        <div class="course-selection">
+            <h2>Select Courses</h2>
+            <label>
+                <input type="checkbox" id="designThinking" data-course="Design Thinking" data-days="Mon,Thu" data-time="13:00-15:00" data-color="#ffcc80"> Design Thinking (Mon, Thu, 1 PM - 3 PM)
+            </label>
+            <label>
+                <input type="checkbox" id="correl1" data-course="Correl 1" data-days="Tue,Fri" data-time="08:00-11:00" data-color="#a5d6a7"> Correl 1 (Tue, Fri, 8 AM - 11 AM)
+            </label>
+            <label>
+                <input type="checkbox" id="diffEquation" data-course="Differential Equation" data-days="Wed,Sat" data-time="11:00-13:00" data-color="#80cbc4"> Differential Equation (Wed, Sat, 11 AM - 1 PM)
+            </label>
+            <label>
+                <input type="checkbox" id="artsAppreciation" data-course="Arts Appreciation" data-days="Mon,Thu" data-time="13:00-15:00" data-color="#ffb74d"> Arts Appreciation (Mon, Thu, 1 PM - 3 PM)
+            </label>
+            <label>
+                <input type="checkbox" id="circuits1" data-course="Circuits 1" data-days="Tue,Fri" data-time="11:00-13:00" data-color="#b39ddb"> Circuits 1 (Tue, Fri, 11 AM - 1 PM)
+            </label>
+            <label>
+                <input type="checkbox" id="statics" data-course="Statics" data-days="Mon,Thu" data-time="15:00-17:00" data-color="#90caf9"> Statics (Mon, Thu, 3 PM - 5 PM)
+            </label>
+            <label>
+                <input type="checkbox" id="purposiveComm" data-course="Purposive Communication" data-days="Wed,Sat" data-time="08:00-10:00" data-color="#ffab91"> Purposive Communication (Wed, Sat, 8 AM - 10 AM)
+            </label>
+            <label>
+                <input type="checkbox" id="pe3" data-course="PE 3" data-days="Tue,Fri" data-time="09:00-11:00" data-color="#81c784"> PE 3 (Tue, Fri, 9 AM - 11 AM)
+            </label>
+            <label>
+                <input type="checkbox" id="nstp" data-course="NSTP" data-days="Sat" data-time="10:00-13:00" data-color="#ffccbc"> NSTP (Sat, 10 AM - 1 PM)
+            </label>
+        </div>
+
+        <!-- Add to Cart button -->
+        <div class="add-to-cart">
+            <a href="https://donedanityyy.my.canva.site/enrollease#streamlined-enrollment-process" target="_blank" class="button">Add to Cart</a>
+        </div>
+
+        <!-- Timetable display section -->
+        <div class="timetable">
+            <h2>Timetable</h2>
+            <table id="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Timetable rows will be generated dynamically here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
